@@ -16,8 +16,13 @@ public class CarController {
   @Autowired
   CarService carService;
 
-  @GetMapping
+  @GetMapping(path = "/findByLiscenseNum")
   public Car getCar(@RequestParam String carLicenseNum) {
     return carService.getCar();
+  }
+
+  @GetMapping(path = "/ping")
+  public String ping() {
+    return "pinged car controller";
   }
 }
