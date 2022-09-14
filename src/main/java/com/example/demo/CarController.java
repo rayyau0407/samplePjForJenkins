@@ -21,7 +21,7 @@ public class CarController {
     return carService.getCar();
   }
 
-  @GetMapping(path = "/ping")
+  @GetMapping
   public String ping() {
     return "pinged car controller";
   }
