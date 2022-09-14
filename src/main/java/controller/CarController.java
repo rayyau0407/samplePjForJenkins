@@ -28,4 +28,9 @@ public class CarController {
   public String tesla() {
     return "pinged tesla";
   }
+
+  @GetMapping(path = "/tesla2")
+  public String tesla2() {
+    return "pinged tesla2";
+  }
 }
