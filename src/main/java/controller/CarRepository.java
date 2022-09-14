@@ -1,4 +1,4 @@
-package com.example.demo;
+package controller;
 
 import lombok.Data;
 import org.springframework.stereotype.Repository;
